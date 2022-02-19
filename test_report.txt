@@ -2,24 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/arrays.test.ts
-  ● Testing the array functions › Testing the makeMath function
-
-    expect(received).toEqual(expected) // deep equality
-
-    Expected: "6=1+2+3"
-    Received: "6=+2+3"
-
-      253 |
-      254 |     test("Testing the makeMath function", () => {
-    > 255 |         expect(makeMath(NUMBERS_1)).toEqual("6=1+2+3");
-          |                                     ^
-      256 |         expect(makeMath(NUMBERS_2)).toEqual("600=100+300+200");
-      257 |         expect(makeMath(NUMBERS_3)).toEqual("5=5");
-      258 |         expect(makeMath(NUMBERS_4)).toEqual("0=0");
-
-      at Object.<anonymous> (src/arrays.test.ts:255:37)
-
+PASS src/arrays.test.ts
 PASS src/HtmlCss.test.tsx
 PASS src/functions.test.ts
 PASS src/text.test.tsx
@@ -27,14 +10,14 @@ PASS src/App.test.tsx
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------|---------|----------|---------|---------|-------------------
-All files     |   98.85 |    97.29 |     100 |   98.75 |                   
+All files     |     100 |      100 |     100 |     100 |                   
  App.tsx      |     100 |      100 |     100 |     100 |                   
- arrays.ts    |   98.38 |    95.23 |     100 |   98.21 | 152               
+ arrays.ts    |     100 |      100 |     100 |     100 |                   
  functions.ts |     100 |      100 |     100 |     100 |                   
 --------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 1 failed, 4 passed, 5 total
-Tests:       1 failed, 22 passed, 23 total
+Test Suites: 5 passed, 5 total
+Tests:       23 passed, 23 total
 Snapshots:   0 total
-Time:        4.823 s
+Time:        3.516 s
 Ran all test suites.
