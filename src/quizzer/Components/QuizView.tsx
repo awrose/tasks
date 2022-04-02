@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { Quiz } from "../Interfaces/quiz";
 import { QuizEditor } from "./QuizEditor";
 import { RecordControls } from "./RecordControls";
@@ -33,7 +33,6 @@ export function QuizView({
                 <Col>
                     <h3>{quiz.title}</h3>
                     <p>{quiz.description}</p>
-                    {/*<MovieRating={movie.rating}></MovieRating*/}
                     <p>Number of Questions: {quiz.numQuest}</p>
                     <RecordControls
                         changeEditing={changeEditing}
