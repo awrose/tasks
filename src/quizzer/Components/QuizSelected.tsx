@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import { Question } from "../Interfaces/question";
 
 export function QuizSelected({
+    points,
     selectedTitle,
     quizzes,
     selectedQuiz
 }: {
+    points: number;
     selectedTitle: string;
     quizzes: Quiz[];
     selectedQuiz: Quiz;

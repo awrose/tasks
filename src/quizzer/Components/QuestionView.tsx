@@ -15,11 +15,37 @@ export function QuestionView({
     editQuestion: (id: number, newQuestion: Question) => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
+    const [answer, setAnswer] = useState<string>("");
+    const [published, setPublished] = useState<boolean>(false);
 
     function changeEditing() {
         setEditing(!editing);
     }
 
+    function changePublished() {
+        setPublished(!published);
+        question.published = published;
+    }
+
+    function updateAnswer(event: React.ChangeEvent<HTMLTextAreaElement>) {
+        setAnswer(event.target.value);
+    }
+
+    function updateMCAnswer(event: React.ChangeEvent<HTMLSelectElement>) {
+        setAnswer(event.target.value);
+    }
+
+    function checkAnswer(question: Question, answer: string): boolean {
+        if (
+            question.correctAns.toLowerCase() === answer.toLowerCase() ||
+            answer === question.correctAns
+        ) {
+            //updatePoints(question.points);
+            return true;
+        } else {
+            return false;
+        }
+    }
     return editing ? (
         <QuestionEditor
             changeEditing={changeEditing}
@@ -35,10 +61,16 @@ export function QuestionView({
                     <p>Points: {question.points}</p>
                     <p>{question.body}</p>
                     <QuestionRecordControls
+                        question={question}
+                        updateAnswer={updateAnswer}
                         changeEditing={changeEditing}
+                        updateMC={updateMCAnswer}
+                        mc={answer}
+                        changePublished={changePublished}
                     ></QuestionRecordControls>
                 </Col>
             </Row>
+            <Row>{checkAnswer(question, answer) ? "✅" : "❌"}</Row>
         </Container>
     );
 }
