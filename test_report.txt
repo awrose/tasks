@@ -23,60 +23,106 @@ PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
 PASS src/quizzer/Quizzer.test.tsx
 PASS src/App.test.tsx
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |   79.24 |    84.21 |   72.87 |   79.71 |                   
- src                         |     100 |      100 |     100 |     100 |                   
-  App.tsx                    |     100 |      100 |     100 |     100 |                   
-  arrays.ts                  |     100 |      100 |     100 |     100 |                   
-  functions.ts               |     100 |      100 |     100 |     100 |                   
-  nested.ts                  |     100 |      100 |     100 |     100 |                   
-  objects.ts                 |     100 |      100 |     100 |     100 |                   
- src/bad-components          |   96.66 |       50 |     100 |   96.42 |                   
-  ChooseTeam.tsx             |     100 |       50 |     100 |     100 | 19                
-  ColoredBox.tsx             |     100 |      100 |     100 |     100 |                   
-  DoubleHalf.tsx             |     100 |      100 |     100 |     100 |                   
-  DoubleHalfState.tsx        |       0 |      100 |     100 |       0 | 3                 
-  ShoveBox.tsx               |     100 |      100 |     100 |     100 |                   
- src/components              |     100 |      100 |     100 |     100 |                   
-  ChangeType.tsx             |     100 |      100 |     100 |     100 |                   
-  Counter.tsx                |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx           |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx           |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx           |     100 |      100 |     100 |     100 |                   
-  TwoDice.tsx                |     100 |      100 |     100 |     100 |                   
- src/form-components         |   96.87 |    91.66 |     100 |   96.87 |                   
-  ChangeColor.tsx            |     100 |      100 |     100 |     100 |                   
-  CheckAnswer.tsx            |     100 |      100 |     100 |     100 |                   
-  EditMode.tsx               |     100 |      100 |     100 |     100 |                   
-  GiveAttempts.tsx           |      90 |       75 |     100 |      90 | 30                
-  MultipleChoiceQuestion.tsx |     100 |      100 |     100 |     100 |                   
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  answer.ts                  |       0 |        0 |       0 |       0 |                   
-  question.ts                |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |      45 |    16.66 |      25 |      50 |                   
-  Quizzer.tsx                |      45 |    16.66 |      25 |      50 | 17-35             
- src/quizzer/Components      |    9.85 |     8.33 |   10.63 |   10.14 |                   
-  AddQuestionModal.tsx       |       0 |      100 |       0 |       0 | 14-45             
-  AddQuizModal.tsx           |      40 |      100 |   33.33 |      40 | 20-27,46          
-  EditableQuestionList.tsx   |       0 |      100 |       0 |       0 | 12-39             
-  QuestionEditor.tsx         |       0 |        0 |       0 |       0 | 16-107            
-  QuestionList.tsx           |       0 |        0 |       0 |       0 | 14-53             
-  QuestionRecordControls.tsx |       0 |      100 |       0 |       0 | 11                
-  QuestionView.tsx           |       0 |        0 |       0 |       0 | 17-23             
-  QuizEditor.tsx             |       0 |        0 |       0 |       0 | 16-91             
-  QuizList.tsx               |     100 |      100 |     100 |     100 |                   
-  QuizSelected.tsx           |       0 |      100 |       0 |       0 | 12-18             
-  QuizView.tsx               |   66.66 |       50 |      50 |   66.66 | 20                
-  RecordControls.tsx         |     100 |      100 |     100 |     100 |                   
- src/quizzer/Interfaces      |       0 |        0 |       0 |       0 |                   
-  question.ts                |       0 |        0 |       0 |       0 |                   
-  quiz.ts                    |       0 |        0 |       0 |       0 |                   
------------------------------|---------|----------|---------|---------|-------------------
+  ● Console
+
+    console.error
+      Warning: Encountered two children with the same key, `Quiz`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at select
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+          at div
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at div
+          at div
+          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:12:35)
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+    console.error
+      Warning: Encountered two children with the same key, `Quiz`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at select
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+          at div
+          at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+          at div
+          at div
+          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:12:35)
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19080:14)
+
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |    80.1 |    83.33 |   72.86 |    80.8 |                   
+ src                           |     100 |      100 |     100 |     100 |                   
+  App.tsx                      |     100 |      100 |     100 |     100 |                   
+  arrays.ts                    |     100 |      100 |     100 |     100 |                   
+  functions.ts                 |     100 |      100 |     100 |     100 |                   
+  nested.ts                    |     100 |      100 |     100 |     100 |                   
+  objects.ts                   |     100 |      100 |     100 |     100 |                   
+ src/bad-components            |   96.66 |       50 |     100 |   96.42 |                   
+  ChooseTeam.tsx               |     100 |       50 |     100 |     100 | 19                
+  ColoredBox.tsx               |     100 |      100 |     100 |     100 |                   
+  DoubleHalf.tsx               |     100 |      100 |     100 |     100 |                   
+  DoubleHalfState.tsx          |       0 |      100 |     100 |       0 | 3                 
+  ShoveBox.tsx                 |     100 |      100 |     100 |     100 |                   
+ src/components                |     100 |      100 |     100 |     100 |                   
+  ChangeType.tsx               |     100 |      100 |     100 |     100 |                   
+  Counter.tsx                  |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx             |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx             |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx             |     100 |      100 |     100 |     100 |                   
+  TwoDice.tsx                  |     100 |      100 |     100 |     100 |                   
+ src/form-components           |   96.87 |    91.66 |     100 |   96.87 |                   
+  ChangeColor.tsx              |     100 |      100 |     100 |     100 |                   
+  CheckAnswer.tsx              |     100 |      100 |     100 |     100 |                   
+  EditMode.tsx                 |     100 |      100 |     100 |     100 |                   
+  GiveAttempts.tsx             |      90 |       75 |     100 |      90 | 30                
+  MultipleChoiceQuestion.tsx   |     100 |      100 |     100 |     100 |                   
+ src/interfaces                |       0 |        0 |       0 |       0 |                   
+  answer.ts                    |       0 |        0 |       0 |       0 |                   
+  question.ts                  |       0 |        0 |       0 |       0 |                   
+ src/quizzer                   |   41.66 |        0 |   23.07 |   47.36 |                   
+  Quizzer.tsx                  |   41.66 |        0 |   23.07 |   47.36 | 18-38             
+ src/quizzer/Components        |   29.54 |     42.3 |    22.8 |   30.23 |                   
+  AddQuestionModal.tsx         |      40 |      100 |   33.33 |      40 | 17-27,45          
+  AddQuizModal.tsx             |   42.85 |      100 |      25 |   42.85 | 21-39,58          
+  EditableQuestionList.tsx     |       0 |      100 |       0 |       0 | 12-39             
+  FilterPublishedQuestions.tsx |       0 |      100 |       0 |       0 | 15-21             
+  MoreRecordControls.tsx       |     100 |       50 |     100 |     100 | 14                
+  QuestionEditor.tsx           |       0 |        0 |       0 |       0 | 16-107            
+  QuestionList.tsx             |   38.88 |    16.66 |   18.18 |   43.75 | 20-45             
+  QuestionRecordControls.tsx   |     100 |       75 |     100 |     100 | 51                
+  QuestionView.tsx             |      50 |     62.5 |   33.33 |      50 | 22-35,44          
+  QuizEditor.tsx               |       0 |        0 |       0 |       0 | 16-90             
+  QuizList.tsx                 |     100 |      100 |     100 |     100 |                   
+  QuizSelected.tsx             |       0 |      100 |       0 |       0 | 14-20             
+  QuizView.tsx                 |   66.66 |       50 |      50 |   66.66 | 20                
+  RecordControls.tsx           |     100 |      100 |     100 |     100 |                   
+ src/quizzer/Interfaces        |       0 |        0 |       0 |       0 |                   
+  question.ts                  |       0 |        0 |       0 |       0 |                   
+  quiz.ts                      |       0 |        0 |       0 |       0 |                   
+-------------------------------|---------|----------|---------|---------|-------------------
 
 Test Suites: 21 passed, 21 total
 Tests:       135 passed, 135 total
 Snapshots:   0 total
-Time:        12.173 s
+Time:        13.818 s
 Ran all test suites.
