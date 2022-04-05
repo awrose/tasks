@@ -21,7 +21,7 @@ PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
-PASS src/quizzer/Quizzer.test.tsx
+PASS src/Quizzer.test.tsx
 PASS src/App.test.tsx
   ● Console
 
@@ -33,7 +33,7 @@ PASS src/App.test.tsx
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
           at div
-          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:12:35)
+          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:13:35)
           at div
           at App
 
@@ -54,7 +54,7 @@ PASS src/App.test.tsx
           at /home/runner/work/tasks/tasks/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
           at div
           at div
-          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:12:35)
+          at Quizzer (/home/runner/work/tasks/tasks/src/quizzer/Quizzer.tsx:13:35)
           at div
           at App
 
@@ -70,7 +70,7 @@ PASS src/App.test.tsx
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |    80.1 |    83.33 |   72.86 |    80.8 |                   
+All files                      |   75.06 |       75 |   69.54 |   75.33 |                   
  src                           |     100 |      100 |     100 |     100 |                   
   App.tsx                      |     100 |      100 |     100 |     100 |                   
   arrays.ts                    |     100 |      100 |     100 |     100 |                   
@@ -99,21 +99,20 @@ All files                      |    80.1 |    83.33 |   72.86 |    80.8 |
  src/interfaces                |       0 |        0 |       0 |       0 |                   
   answer.ts                    |       0 |        0 |       0 |       0 |                   
   question.ts                  |       0 |        0 |       0 |       0 |                   
- src/quizzer                   |   41.66 |        0 |   23.07 |   47.36 |                   
-  Quizzer.tsx                  |   41.66 |        0 |   23.07 |   47.36 | 18-38             
- src/quizzer/Components        |   29.54 |     42.3 |    22.8 |   30.23 |                   
-  AddQuestionModal.tsx         |      40 |      100 |   33.33 |      40 | 17-27,45          
-  AddQuizModal.tsx             |   42.85 |      100 |      25 |   42.85 | 21-39,58          
+ src/quizzer                   |   42.85 |    16.66 |   23.07 |   47.05 |                   
+  Quizzer.tsx                  |   42.85 |    16.66 |   23.07 |   47.05 | 18-36,95          
+ src/quizzer/Components        |    8.69 |     3.84 |    9.09 |    8.88 |                   
+  AddQuestionModal.tsx         |       0 |      100 |       0 |       0 | 14-48             
+  AddQuizModal.tsx             |   42.85 |      100 |      25 |   42.85 | 21-42,61          
   EditableQuestionList.tsx     |       0 |      100 |       0 |       0 | 12-39             
   FilterPublishedQuestions.tsx |       0 |      100 |       0 |       0 | 15-21             
-  MoreRecordControls.tsx       |     100 |       50 |     100 |     100 | 14                
+  MoreRecordControls.tsx       |       0 |        0 |       0 |       0 | 12                
   QuestionEditor.tsx           |       0 |        0 |       0 |       0 | 16-107            
-  QuestionList.tsx             |   38.88 |    16.66 |   18.18 |   43.75 | 20-45             
-  QuestionRecordControls.tsx   |     100 |       75 |     100 |     100 | 51                
-  QuestionView.tsx             |      50 |     62.5 |   33.33 |      50 | 22-35,44          
+  QuestionList.tsx             |       0 |        0 |       0 |       0 | 15-70             
+  QuestionRecordControls.tsx   |       0 |        0 |       0 |       0 | 22-47             
+  QuestionView.tsx             |       0 |        0 |       0 |       0 | 17-55             
   QuizEditor.tsx               |       0 |        0 |       0 |       0 | 16-90             
   QuizList.tsx                 |     100 |      100 |     100 |     100 |                   
-  QuizSelected.tsx             |       0 |      100 |       0 |       0 | 14-20             
   QuizView.tsx                 |   66.66 |       50 |      50 |   66.66 | 20                
   RecordControls.tsx           |     100 |      100 |     100 |     100 |                   
  src/quizzer/Interfaces        |       0 |        0 |       0 |       0 |                   
@@ -124,5 +123,5 @@ All files                      |    80.1 |    83.33 |   72.86 |    80.8 |
 Test Suites: 21 passed, 21 total
 Tests:       135 passed, 135 total
 Snapshots:   0 total
-Time:        17.684 s
+Time:        14.156 s
 Ran all test suites.
