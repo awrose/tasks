@@ -66,7 +66,7 @@ export function QuestionList({
                     ></FilterPublishedQuestions>
                 ) : (
                     <Stack gap={1}>
-                        {questions.map((question: Question) => (
+                        {questionss.map((question: Question) => (
                             <div
                                 key={question.id}
                                 className="bg-light border m-2 p-2"

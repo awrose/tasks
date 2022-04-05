@@ -26,9 +26,10 @@ export function QuestionRecordControls({
             </Button>
             <div>
                 {question.type === "short_answer_question" ? (
-                    <Form.Group controlId="">
+                    <Form.Group controlId="saquestion">
                         <Form.Label>Short Answer</Form.Label>
                         <Form.Control
+                            id="answerboxsa"
                             as="textarea"
                             rows={3}
                             onChange={updateAnswer}
@@ -37,7 +38,11 @@ export function QuestionRecordControls({
                 ) : (
                     <Form.Group controlId="multipleChoice">
                         <Form.Label>Select an Answer</Form.Label>
-                        <Form.Select value={mc} onChange={updateMC}>
+                        <Form.Select
+                            id="answerboxmc"
+                            value={mc}
+                            onChange={updateMC}
+                        >
                             {question.options.map((option: string) => (
                                 <option key={option} value={option}>
                                     {option}
